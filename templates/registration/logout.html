@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Tizimdan Chiqish
+{% endblock title %}
+
+{% block content %}
+    <form method="post" class="mt-5" >
+        {% csrf_token %}
+        <h4 style="color: white;" > Tizimdan chiqishni hohlaysizmi?</h4>
+        <p class="text-muted" >Bu sizning saqlanmagan ma'lumotlaringiz o'chib ketishiga sabab bo'lishi mumkin.</p>
+        <button style="background-color: rgb(240, 67, 67);"  type="submit" class="btn btn-danger mt-3" > Chiqish </button>
+        <a  class="btn btn-primary mt-3 " href="/">Qaytish</a>
+    </form>
+{% endblock content %}

@@ -1,0 +1,299 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    margin: 0;
+    border:0;
+    padding: 0;
+    /* color: white; */
+  }
+
+a{
+color: a;
+text-decoration: none;
+}
+
+
+.nav-items{
+  color: white;
+  font-size: larger;
+  list-style-type: none;
+  font-weight: 20px;
+  
+}
+
+
+.nav-item{
+  text-decoration: none;
+  margin-bottom: 10;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.3s;
+  
+
+}
+
+.nav-item:hover{
+  background-color: rgb(41, 41, 41);
+  transition: 0.3s;
+
+}
+
+.nav-item a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items .logo img{
+  width: 30px;
+  height: 30px;
+}
+
+.nav-item i{
+  font-size: x-large;
+  width: 30px;
+}
+
+.post_button{
+  color: white;
+  font-size: larger;
+  font-weight: 20px;
+  background-color: rgb(29, 155, 240);
+  width: 90%;
+  height: 50px;
+  border-radius: 25px;
+  margin-left:10px;
+  border: none
+
+
+}
+
+.search-input{
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(22,24,28);
+  margin-top: 10px;
+  
+}
+
+.search-input:focus{
+  border: 1px rgb(29, 155, 240);
+}
+
+.trends{
+  width: 100%;
+  background-color: rgb(22,24,28);
+  margin-top: 25px;
+  border-radius: 15px;
+  color: white;
+  padding: 10px;
+}
+
+.trends ul{
+  list-style-type: none;
+}
+
+.trends .more{
+  text-decoration: none;
+  color: rgb(29, 155, 240);
+}
+
+section{
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  border-color: white;
+  border-left: solid;
+  border-right: solid;
+  border-width: 1px;
+}
+
+section::-webkit-scrollbar {
+  width: 0 !important
+  }
+
+.active{
+  color: white;
+  border-top: solid 2px rgb(29, 155, 240);
+  
+}
+
+section .type{
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.tweet{
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+.tweet-form{
+  width: 100%;
+  
+}
+
+.tweet-form .tweet {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 35px;
+  border:none;
+  border-bottom: solid gray ;
+  border-width: 1px;
+
+}
+
+.tweet:focus{
+  border: none;
+}
+
+.tweet-media{
+  margin-top: 10px;
+  color: rgb(29, 155, 240);
+}
+
+.btn{
+  color: white;
+  background-color: rgb(29, 155, 240);
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin-left:10px;
+  border: none;
+  margin-top: 5px;
+}
+
+.btn:hover{
+  color: white;
+  background-color: rgb(21, 112, 173);;
+}
+
+.tweet-form .btn{
+  float: right;
+
+}
+
+.avatar{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+
+.main{
+  color: white;
+}
+
+.post .content{
+  min-width: 70%;
+  max-width: 100%;
+  /* padding: 15px; */
+}
+
+.post .comment-post{
+  border-radius: 15px;
+  border: 1px solid rgb(31, 30, 30);
+  padding: 15px;
+}
+
+.grey{
+  color: grey;
+}
+
+.post-comment-tweet{
+  color: white;
+}
+
+.image-tweet{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.actions{
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.comment-user-avatar{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.post-one{
+  border-bottom: solid 1px;
+}
+
+.post-user-info{
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+
+.liked{
+  color: rgb(228, 85, 85);
+}
+
+.action{
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.action:hover{
+  cursor: pointer;
+  background-color: rgb(22,24,28);
+}
+
+.like:hover{
+  color: rgb(228, 85, 85);
+}
+
+.comment:hover{
+  color: aqua;
+}
+
+.save:hover{
+  color: green;
+}
+
+
+
+/* Profile  */
+
+.cover-image{
+  width: 100%;
+
+}
+
+.profile-user-info{
+  position: relative;
+  top: -80px;
+  color: white;
+
+}
+
+.profile-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:  white  solid;
+  margin-bottom: 15px;
+}
+
+.profile-user-bio{
+  margin-bottom: 0px;
+}
+
+.profile-user-add-info{
+  color: grey;
+
+}
+
+.profile-following-count{
+  margin-top: 25px;
+
+}

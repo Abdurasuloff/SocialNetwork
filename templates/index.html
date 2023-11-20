@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Home Page
+{% endblock title %}
+
+{% block content %}
+<div class="row type">
+  <div class="col-6 active">
+     <p  ><center><b>For You</b></center></p>
+  </div>
+  <div class="col-6 ">
+    <p  ><center><b>Following</b></center></p>
+ </div>
+</div>
+<div class="container">
+  <div class="row tweet">
+    <div class="col-2">
+      <!-- Profile image -->
+    </div>
+    <div class="col-10">
+      <form class="tweet-form"  action="" method="post">
+          <input type="text" placeholder="What is happening?!" name="tweet" class="tweet"  >
+          <input id="tweet-image" type="file" accept="image/*" hidden>
+          <label class="tweet-media" for="tweet-image"><i class="fa-regular fa-image"></i></label>
+          <input id="tweet-video" type="file" accept="video/*" hidden>
+          <label class="tweet-media" for="tweet-video"><i class="fa-solid fa-video"></i></label>
+
+          <button class="btn" type="submit" >Post</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Posts Start -->
+  <div class="posts">
+    <!-- One Post Start -->
+    <div class="row post-one mt-3">
+      <div class="col-1 post-avatar ">
+          <img class="avatar"  src="{% static '/images/default.jpg' %}" alt="Profile picture">
+      </div>
+      <div class="col-10 post ">
+        <div class="post-user-info">
+          <b class="main" >Akbarjon</b>
+          <span class="grey" > <a class="grey" href="#"> @abdurasuloff </a>  | 1 hour ago</span>
+          <div class="content mt-2">
+              <div class="post mb-3">
+                <p class="main" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio quae maxime.</p>
+                <p class="main">Lorem, ipsum dolor.?</p>
+                <img src="{% static '/images/tweet-image.jfif' %}" alt="Tweet image" class="image-tweet">
+              </div>
+              <!-- <div class="comment-post">
+                <div class="row">
+                  <div class="col-1">
+                    <img src="./images/default.jpg" alt="Comment User" class="comment-user-avatar">
+                  </div>
+                  <div class="col-11">
+                    <p class="comment-post-user small" > <b class="main">Jo'ra Ahmad</b> <span class="grey">@ahmadullo | 1 hour ago</span> </p>
+                  </div>
+                </div>
+                <p class="post-comment-tweet" ><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur, rerum, numquam a accusantium dolorum doloremque obcaecati nesciunt consequatur ut veniam molestias sed. </small></p>
+                <img class="image-tweet" src="./images/tweet-image.jfif" alt="tweet image">
+                
+              </div> -->
+              <div class="actions d-flex justify-content-between mt-3 ">
+                <div class="action small comment"><i class="fa-regular fa-comment"></i> 1.3k</div>
+                <div class="action small like"><i class="fa-regular fa-heart"></i> 125k</div>
+                <div class="action small save"><i class="fa-regular fa-bookmark"></i> 0.5k</div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- One POst End -->
+    <!-- One Post Start -->
+    <div class="row post-one mt-3">
+      <div class="col-1 post-avatar ">
+          <img class="avatar"  src="{% static '/images/default.jpg' %}" alt="Profile picture">
+      </div>
+      <div class="col-10 post ">
+        <div class="post-user-info">
+          <b class="main" >Akbarjon</b>
+          <span class="grey" > <a class="grey" href="#"> @abdurasuloff </a> | 1 hour ago</span>
+          <div class="content mt-2">
+              <div class="post mb-3">
+                <p class="main" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio quae maxime.</p>
+                <p class="main">Lorem, ipsum dolor.?</p>
+                <!-- <img src="./images/tweet-image.jfif" alt="Tweet image" class="image-tweet"> -->
+              </div>
+              <a href="#">
+                <div class="comment-post">
+                  <div class="row">
+                    <div class="col-1">
+                      <img src="{% static '/images/default.jpg' %}" alt="Comment User" class="comment-user-avatar">
+                    </div>
+                    <div class="col-11">
+                      <p class="comment-post-user small" > <b class="main">Jo'ra Ahmad</b> <span class="grey">@ahmadullo | 1 hour ago</span> </p>
+                    </div>
+                  </div>
+                  <p class="post-comment-tweet" ><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur, rerum, numquam a accusantium dolorum doloremque obcaecati nesciunt consequatur ut veniam molestias sed. </small></p>
+                  <img class="image-tweet" src="{% static '/images/tweet-image.jfif' %}" alt="tweet image">
+                  
+                </div>
+              </a>
+              <div class="actions d-flex justify-content-between mt-3 ">
+                <div class="action small "><i class="fa-regular fa-comment"></i> 1.3k</div>
+                <div class="action small"><i class="fa-regular fa-heart"></i> 125k</div>
+                <div class="action small"><i class="fa-regular fa-bookmark"></i> 0.5k</div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- One POst End -->
+  </div>
+  <!-- Postst End -->
+</div>
+{% endblock content %}

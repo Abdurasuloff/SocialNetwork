@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+    Parolni o'zgartirish
+{% endblock title %}
+
+{% block content %}
+    <style>
+        form input{
+            background-color: rgb(42, 42, 42)!important; 
+            color: white !important;
+        }
+
+        label{
+            color: white !important;
+        }
+    </style>
+    <form method="post" class="mt-5" >
+        <h4 class="main" >Parolni o'zgartirish</h4>
+        {% csrf_token %}
+
+        {{form|crispy}}
+        <button   type="submit" class="btn btn-danger mt-3" > O'zgartirish </button>
+        <a style="background-color: rgb(240, 174, 67);"  class="btn btn-primary mt-3 " href="/">Qaytish</a>
+    </form>
+{% endblock content %}
